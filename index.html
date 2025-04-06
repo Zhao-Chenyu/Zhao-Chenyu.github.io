@@ -1,42 +1,91 @@
 ---
 layout: page
-description: "Thinking will not overcome fear but action will."
+description: "PhD @ OSU | Welding Engineering Program, MSE | Java Full-Stack Developer"
 ---
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-        <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:200 }}
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-</div>
-<hr>
-{% endfor %}
+<style>
+  .section-header {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .section-header .emoji {
+    font-size: 22px;
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px;
+  }
+  .section-header .title {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .indent {
+    padding-left: 35px;
+    margin-top: 15px;
+  }
+  .post-container ul {
+    list-style-type: none;
+    padding-left: 35px;
+    margin-top: 15px;
+  }
+  .post-container ul li {
+    margin-bottom: 8px;
+  }
+</style>
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+<div class="post-container" style="line-height: 1.7; font-size: 16px;">
+
+  <p><em>💡 Full-Stack Developer with a PhD in Engineering, passionate about building smart manufacturing systems.</em></p>
+
+  <!-- Hi -->
+  <div class="section-header">
+    <div class="emoji">👋</div>
+    <div class="title">Hi, I'm Chenyu Zhao</div>
+  </div>
+  <p class="indent">
+    I hold a PhD in the Welding Engineering Program, Department of Materials Science and Engineering from The Ohio State University, where I also earned a Master's degree in the same field. Additionally, I obtained a Master's and Bachelor's degree in Electrical Engineering from Xi'an Jiaotong University. I am passionate about bridging advanced engineering with practical manufacturing. I aim to integrate engineering insight and automation technologies to drive measurable improvements in manufacturing.
+  </p>
+
+  <!-- Skills -->
+  <div class="section-header">
+    <div class="emoji">🛠️</div>
+    <div class="title">Technical Skills</div>
+  </div>
+  <ul>
+    <li><strong>Simulation & Engineering Tools:</strong> ANSYS, COMSOL, SolidWorks</li>
+    <li><strong>Manufacturing:</strong> Six Sigma, PLC</li>
+    <li><strong>Full-Stack Development:</strong> Java, Spring Boot, React, PostgreSQL</li>
+    <li><strong>Software Architecture:</strong> System Design, RESTful APIs</li>
+  </ul>
+
+  <!-- Focus -->
+  <div class="section-header">
+    <div class="emoji">🏭</div>
+    <div class="title">Engineering & Manufacturing Focus</div>
+  </div>
+  <p class="indent">
+    My experience spans from physical process simulation to software-based workflow tools for manufacturing environments. I focus on applying Six Sigma principles, industrial automation, and full-stack development to optimize quality, efficiency, and system integration.
+  </p>
+
+  <!-- Future Goals -->
+  <div class="section-header">
+    <div class="emoji">🚀</div>
+    <div class="title">Future Goals & Interests</div>
+  </div>
+  <p class="indent">
+    I'm driven to explore how software and automation can shape the future of manufacturing. In the coming years, I aim to deepen my expertise in industrial digitalization, production intelligence, and smart factory solutions.
+  </p>
+
+  <!-- Links -->
+  <div class="section-header">
+    <div class="emoji" style="color: #66b3ff;">🌐</div>
+    <div class="title">Links</div>
+  </div>
+  <ul>
+    <li><a href="https://github.com/Zhao-chenyu" target="_blank">GitHub</a></li>
+    <li><a href="https://scholar.google.com/citations?user=l73N_C4AAAAJ" target="_blank">Google Scholar</a></li>
+    <li><a href="https://www.linkedin.com/in/chenyuzhao78/" target="_blank">LinkedIn</a></li>
+  </ul>
+
+</div>
